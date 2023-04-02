@@ -1,0 +1,102 @@
+#game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgba(255, 215, 0, 0.6);
+  }
+  #game h1{
+    color: blue;
+  }
+  #player-x-score{
+    color: blue;
+    font-size: 25px;
+  }
+  #player-o-score{
+    color: rgb(194, 35, 88);
+    font-size: 25px;
+  }
+  
+  #score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+  #score  h2{
+    margin-bottom: 3px;
+  }
+  #score  p{
+    margin-bottom: 9px;
+  }
+  button{
+    background: rgb(135, 135, 226, 0.5);
+    border-color: blue;
+    padding: 6px;
+  }
+  
+  #board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: #fff;
+    background-color: #444;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+    height: 100px;
+    width: 100px;
+  }
+  
+  .cell:hover {
+    background-color: #555;
+  }
+  
+  .x {
+    color: blue;
+  }
+  
+  .o {
+    color: pink;
+  }
+  .cell.x:before {
+    content: "X";
+    font-size: 50px;
+    color: blue;
+  }
+  
+  .cell.o:before {
+    content: "O";
+    font-size: 50px;
+    color: rgb(194, 35, 88);
+  }
+  .sp{
+    color: rgb(194, 35, 88)
+  }
+  
+
+  @media screen and (min-width: 900px) {
+    .gam{
+        display: flex;
+        gap: 8rem;
+    }
+    #score{
+        margin-top: 40px;
+    }
+    #game h1{
+        margin-bottom: 60px;
+    }
+  }
+  
